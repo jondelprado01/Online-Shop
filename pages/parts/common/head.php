@@ -15,3 +15,5 @@
 <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
 <!-- custom CSS here -->
 <link href="assets/css/style.css" rel="stylesheet" />
+
+<title>Online Shop</title>

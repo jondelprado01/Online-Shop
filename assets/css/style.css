@@ -37,14 +37,9 @@ ul.advisory .description{
   width: 800px;
 }
 
-.thumbnail {
+.thumbnail, .category{
     position: relative;
     width: 100%;
-}
-
-.category{
-  position: relative;
-  width: 100%;
 }
 
 .image {
