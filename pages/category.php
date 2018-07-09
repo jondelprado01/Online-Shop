@@ -20,43 +20,43 @@
     <link href="../assets/css/style.css" rel="stylesheet" />
 
     <style media="screen">
-.dropdown, .dropdown2 {
-  position: relative;
-  /* display: inline-block; */
-}
+      .dropdown, .dropdown2 {
+        position: relative;
+        /* display: inline-block; */
+      }
 
-.dropdown-content, .dropdown-content2{
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  /* min-width: 160px; */
-  width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
-}
+      .dropdown-content, .dropdown-content2{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        /* min-width: 160px; */
+        width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+      }
 
-.dropdown-content a, .dropdown-content2 a {
-  color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+      .dropdown-content a, .dropdown-content2 a {
+        color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
 
-.dropdown-content a:hover, .dropdown-content2 a:hover{
-  background-color: #ddd;
-}
+      .dropdown-content a:hover, .dropdown-content2 a:hover{
+        background-color: #ddd;
+      }
 
-.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
-  display: block;
-}
+      .dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
+        display: block;
+      }
 
-.dropdown:hover, .dropdown2:hover{
-    background-color: #3e8e41;
-}
+      .dropdown:hover, .dropdown2:hover{
+          background-color: #3e8e41;
+      }
 
     </style>
 </head>
@@ -252,15 +252,28 @@
 
           <div class="row">
 
+            <?php
+
+              require '../connection.php';
+
+              $result = mysqli_query($conn, "SELECT * FROM product_table");
+
+              while ($row = mysqli_fetch_array($result)) {
+                $product_img = $row['product_img_path'];
+                $product_name = $row['product_name'];
+                $product_price = $row['product_price'];
+
+                ?>
+
             <div class="col-md-4 text-center col-sm-6 col-xs-6">
                 <div class="thumbnail product-box">
-                  <img style="height: 200px; width: 250px" class="image" src="../assets/img/products/mobo/msi-gaming.png" alt="" />
+                  <img style="height: 200px; width: 250px" class="image" src="<?php echo "../$product_img" ?>" alt="" />
                   <div class="caption">
-                      <h3><a href="#">MSI X399 Gaming Pro Carbon</a></h3>
-                      <p>Price : <strong>PHP 18,000</strong>  </p>
-                      <p>AMD/TR4/X399</p>
+                      <h3><a href="#"><?php echo $product_name ?></a></h3>
+                      <p>Price : <strong><?php echo $product_price ?></strong>  </p>
+                      <!-- <p>AMD/TR4/X399</p> -->
                       <p><a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                        <a target="_blank" href="https://www.msi.com/Motherboard/X399-GAMING-PRO-CARBON-AC.html" class="btn btn-primary" role="button">See Details</a></p>
+                        <a target="_blank" href="#" class="btn btn-primary" role="button">See Details</a></p>
                   </div>
                   <div class="middle">
                     <a href="#" class="btn btn-warning" role="button">Check Item</a></p>
@@ -268,95 +281,11 @@
                 </div>
             </div>
 
-            <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                <div class="thumbnail product-box">
-                  <img style="height: 200px; width: 250px" class="image" src="../assets/img/products/mobo/msi-gaming.png" alt="" />
-                  <div class="caption">
-                      <h3><a href="#">MSI X399 Gaming Pro Carbon</a></h3>
-                      <p>Price : <strong>PHP 18,000</strong>  </p>
-                      <p>AMD/TR4/X399</p>
-                      <p><a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                        <a target="_blank" href="https://www.msi.com/Motherboard/X399-GAMING-PRO-CARBON-AC.html" class="btn btn-primary" role="button">See Details</a></p>
-                  </div>
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check Item</a></p>
-                  </div>
-                </div>
-            </div>
+          <?php
+            }
 
-            <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                <div class="thumbnail product-box">
-                  <img style="height: 200px; width: 250px" class="image" src="../assets/img/products/mobo/msi-gaming.png" alt="" />
-                  <div class="caption">
-                      <h3><a href="#">MSI X399 Gaming Pro Carbon</a></h3>
-                      <p>Price : <strong>PHP 18,000</strong>  </p>
-                      <p>AMD/TR4/X399</p>
-                      <p><a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                        <a target="_blank" href="https://www.msi.com/Motherboard/X399-GAMING-PRO-CARBON-AC.html" class="btn btn-primary" role="button">See Details</a></p>
-                  </div>
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check Item</a></p>
-                  </div>
-                </div>
-            </div>
+          ?>
 
-          </div>
-
-          <div class="row">
-
-          <div class="col-md-4 text-center col-sm-6 col-xs-6">
-              <div class="thumbnail product-box">
-                  <img style="height: 250px; width: 250px" class="image" src="../assets/img/products/gpu/asus-strix.jpg" alt="" />
-                  <div class="caption">
-                      <h3><a href="#">Asus ROG Strix GeForce® GTX 1080 Ti OC</a></h3>
-                      <p>Price : <strong>Php 59,500</strong>  </p>
-                      <p>Nvidia/Asus/Strix</p>
-                      <p>
-                          <a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                          <a target="_blank" href="https://www.asus.com/ph/Graphics-Cards/ROG-STRIX-GTX1080TI-O11G-GAMING/" class="btn btn-primary" role="button">See Details</a>
-                      </p>
-                  </div>
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check Item</a></p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-4 text-center col-sm-6 col-xs-6">
-              <div class="thumbnail product-box">
-                  <img style="height: 250px; width: 250px" class="image" src="../assets/img/products/gpu/asus-strix.jpg" alt="" />
-                  <div class="caption">
-                      <h3><a href="#">Asus ROG Strix GeForce® GTX 1080 Ti OC</a></h3>
-                      <p>Price : <strong>Php 59,500</strong>  </p>
-                      <p>Nvidia/Asus/Strix</p>
-                      <p>
-                          <a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                          <a target="_blank" href="https://www.asus.com/ph/Graphics-Cards/ROG-STRIX-GTX1080TI-O11G-GAMING/" class="btn btn-primary" role="button">See Details</a>
-                      </p>
-                  </div>
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check Item</a></p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-4 text-center col-sm-6 col-xs-6">
-              <div class="thumbnail product-box">
-                  <img style="height: 250px; width: 250px" class="image" src="../assets/img/products/gpu/asus-strix.jpg" alt="" />
-                  <div class="caption">
-                      <h3><a href="#">Asus ROG Strix GeForce® GTX 1080 Ti OC</a></h3>
-                      <p>Price : <strong>Php 59,500</strong>  </p>
-                      <p>Nvidia/Asus/Strix</p>
-                      <p>
-                          <a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                          <a target="_blank" href="https://www.asus.com/ph/Graphics-Cards/ROG-STRIX-GTX1080TI-O11G-GAMING/" class="btn btn-primary" role="button">See Details</a>
-                      </p>
-                  </div>
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check Item</a></p>
-                  </div>
-              </div>
-          </div>
         </div>
 
         </div>
