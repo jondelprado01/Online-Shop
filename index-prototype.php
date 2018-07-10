@@ -77,10 +77,10 @@
     <div class="row justify-content-center">
       <div class="col-md col-sm-4 col-6 py-3">
         <p class="text-center my-0"><strong>Components</strong></p>
-        <div class="d-flex">
-          <img class="image" src="assets/img/components.jpg" style="width:100%;">
-          <!-- <a class="btn btn-warning my-2 my-sm-0 d-inline-block appear-on-hover" type="button">Display Contents</a> -->
-        </div>
+        <!-- <div class="d-flex">
+          <a class="btn btn-warning my-2 my-sm-0 d-inline-block appear-on-hover" type="button">Display Contents</a>
+        </div> -->
+        <img class="image" src="assets/img/components.jpg" style="width:100%;">
         <p class="text-center text-muted my-0">XX Brands</p>
         <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
       </div>
@@ -137,6 +137,6 @@
 
     <!-- Footer -->
     <?php require 'pages/parts/common/footer.php'; ?>
-    
+
   </body>
 </html>
