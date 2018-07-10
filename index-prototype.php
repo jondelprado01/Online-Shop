@@ -225,8 +225,6 @@
       </div>
     </div>
     <hr>
-    <div class="bg-secondary text-light pt-2 px-3">
-    </div>
 
     <!-- Footer -->
     <?php require 'pages/parts/common/footer.php'; ?>
