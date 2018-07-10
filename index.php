@@ -9,7 +9,7 @@
 
   <body>
 
-    <!-- Navigation -->
+    <!-- Header -->
     <?php require 'pages/parts/common/navigation.php'; ?>
 
     <div class="container">
