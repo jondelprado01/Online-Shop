@@ -28,16 +28,24 @@ body{
   font-family:'Open Sans', sans-serif;
   /* background: #ced5dd; */
 }
-/* BUTTON APPEARS ON HOVER */
-a.appear-on-hover {
+
+#thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+#thumbnail .appear-on-hover {
   position: absolute;
-  font-size: 0.7rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: auto;
-  height: auto;
+  cursor: pointer;
+  font-size: 0.7em;
+}
+
+/* BUTTON APPEARS ON HOVER */
+a.appear-on-hover {
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -46,7 +54,7 @@ img:hover + .appear-on-hover, .appear-on-hover:hover {
   opacity: 1;
   transition: opacity 0.2s;
 }
-}
+
 /*=============================================================
     Authour URI: www.binarytheme.com
     License: Commons Attribution 3.0
