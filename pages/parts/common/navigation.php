@@ -36,13 +36,13 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="nav navbar-form navbar-right">
-              <form class="form-inline m-auto p-auto">
-                    <input class="form-control m-auto p-auto" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success m-auto p-auto" type="submit">Search</button>
-                  </form>
-            </ul>
-
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Keyword Here ..." class="form-control">
+                </div>
+                &nbsp;
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
         </div>
         <!-- /.navbar-collapse -->
     </div>
