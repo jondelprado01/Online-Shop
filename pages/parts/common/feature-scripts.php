@@ -1,4 +1,4 @@
-<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/jquery.js"></script>
 <!--bootstrap JavaScript file  -->
 <script src="assets/js/bootstrap.js"></script>
 <!--Slider JavaScript file  -->
