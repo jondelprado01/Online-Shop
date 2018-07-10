@@ -1,0 +1,80 @@
+﻿/*=======================================
+    GENERAL STYLES
+==================================================*/
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up  {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up {
+  html {
+    font-size: 1.6rem;
+  }
+}
+/*  */
+body{
+  font-family:'Open Sans', sans-serif;
+  /* background: #ced5dd; */
+}
+
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+
+    ========================================================  */
+
+/*=======================================
+  FOOTER SECTION
+==================================================*/
+.footer-box {
+    background-color:#F5F5F5;
+    padding:20px 50px 20px 50px;
+
+
+}
+.small-box {
+    font-size:10px;
+}
+
+.footer-box a {
+    color:#808080;
+    text-decoration:none;
+}
+.footer-box a:hover {
+    color:#000;
+}
+.pad-botom {
+    padding-bottom:30px;
+}
+.footer-box p {
+    padding-top:15px;
+    padding-bottom:15px;
+    line-height:25px;
+}
+.social-box a{
+     color:#333436;
+    text-decoration:none;
+}
+
+.end-box {
+    padding:20px;
+     color:#fff;
+     background-color:#000;
+     font-size:14px;
+}

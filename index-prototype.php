@@ -18,13 +18,13 @@
     <!--Slide Show Css -->
     <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
     <!-- custom CSS here -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style-prototype.css" rel="stylesheet" />
     <title>Online Shop</title>
   </head>
   <body>
 
 <!-- HEADER -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark my-0 py-0">
     <!-- BRAND AND COLLAPSE BUTTON -->
     <a class="navbar-brand text-light" href="#">Online Shop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
     <!--  -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- SEARCH BAR -->
-      <form class="input-group form-inline w-50 ml-auto">
+      <form class="input-group form-inline input-group-sm w-50 my-2 mx-sm-auto">
         <input class="form-control mr-sm-0" type="search" placeholder="" aria-label="Search">
           <div class="input-group-append">
             <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
@@ -46,10 +46,10 @@
           <a class="nav-link text-light" href="#">Track Order</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-center" href="#">Cart</a>
+          <a class="nav-link text-light" href="#">Cart</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link text-light text-center" href="#">Login</a>
+          <a class="nav-link text-light" href="#">Login</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link text-white" href="#"><strong>Sign Up</strong><span class="sr-only">(current)</span></a>
@@ -69,157 +69,71 @@
       <!--  -->
     </div>
   </nav>
-<!-- HEADER -->
+<!-- HEADER END -->
 
 <!-- BODY -->
-  <div class="container">
-    <div id="myCarousel" class="carousel slide carousel-fade" data-interval-"false" data-ride="carousel">
-<!-- Indicators -->
-        <div class="col-md-12">
-            <div class="well well-lg offer-box text-center">
-
-
-              <p style="font-family: arial">Welcome to PC Online Shop</p>
-              <p>Stay updated for limited offers and discount</p>
-
-               <!-- Today's Offer : &nbsp; <span class="glyphicon glyphicon-cog"></span>&nbsp;40 % off  on purchase of $ 2,000 and above till 24 dec ! -->
-
-            </div>
-
-            <div class="main box-border">
-
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="category">
-
-                    <a href="index.php">
-                      <img class="image" src="assets/img/components.jpg" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Components</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="pages/category.php" class="btn btn-warning" role="button">Check All Latest Components</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-
-                    <a href="index.php">
-
-                      <img class="image" src="assets/img/peripherals.jpg" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Peripherals</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check All Latest Peripherals</a></p>
-                  </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-                    <a href="index.php">
-
-                      <img class="image" src="assets/img/net.png" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Net Devices</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="#" class="btn btn-warning" role="button">Check All Latest Net Devices</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-
-                    <a href="index.php">
-
-                      <img class="image" src="assets/img/laptops.jpg" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Laptops</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="#" class="btn btn-warning" role="button">Check All Latest Laptops</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-                    <a href="index.php">
-
-                    <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
-
-                    <div class="carousel-caption">
-                      <h3 style="color:red; font-weight:bold">Accessories</h3>
-                      <p>Click to see the list of Items</p>
-                    </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="#" class="btn btn-warning" role="button">Check All Latest Accessories</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-              </ol>
-
-              </div>
-
-
-            </div>
+  <div class="container-fluid mw-100 mh-100">
+    <!-- CATEGORIES -->
+    <div class="row justify-content-center">
+      <div class="col-md col-sm-4 col-6 py-3">
+        <p class="text-center my-0"><strong>Components</strong></p>
+        <div class="d-flex">
+          <img class="image" src="assets/img/components.jpg" style="width:100%;">
+          <!-- <a class="btn btn-warning my-2 my-sm-0 d-inline-block appear-on-hover" type="button">Display Contents</a> -->
         </div>
-
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
       </div>
-
+      <div class="col-md col-sm-4 col-6 py-3 bg-light">
+        <p class="text-center my-0"><strong>Peripherals</strong></p>
+        <img class="image" src="assets/img/peripherals.jpg" style="width:100%;">
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <p class="text-center my-0"><strong>Network Hardwares</strong></p>
+        <img class="image" src="assets/img/net.png" style="width:100%;">
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3 bg-light">
+        <p class="text-center my-0"><strong>Laptops</strong></p>
+        <img class="image" src="assets/img/laptops.jpg" style="width:100%;">
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <p class="text-center my-0"><strong>Accessories</strong></p>
+        <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
     </div>
+    <!--  -->
+    <!-- DISCOUNTED ITEMS -->
+    <div class="d-flex bg-info text-light pt-2 px-3">
+      <h5><strong>Discounted Items</strong><h5>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md col-sm-4 col-6 py-3">
+        <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
+      </div>
+    </div>
+    <!--  -->
+  </div>
+<!-- BODY END -->
 
     <!-- Footer -->
     <?php require 'pages/parts/common/footer.php'; ?>
@@ -230,7 +144,6 @@
   </body>
 
 </html>
-
 
 <script>
 
