@@ -1,50 +1,51 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><strong>Online Shop</strong></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark my-0 py-0 rounded-bottom">
+  <!-- BRAND AND COLLAPSE BUTTON -->
+  <a href="index.php " class="navbar-brand text-light">Online Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!--  -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- SEARCH BAR -->
+    <form class="input-group form-inline input-group-sm w-50 my-2 mx-sm-auto">
+      <input class="form-control mr-sm-0" type="search" placeholder="" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
         </div>
+    </form>
+    <!--  -->
+    <!-- NAVIGATION -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Track Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Cart</a>
+      </li>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <li class="nav-item active">
+          <a href="login.php" class="nav-link text-light">Login</a>
+        </li>
+
+        <li class="nav-item active">
+          <a href="signup.php" class="nav-link text-white">Signup</a>
+        </li>
 
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="order-tracking.html">Track Order</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="signup.php">Signup</a></li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">24x7 Support <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><strong>Call: </strong>0912 345 6789/a></li>
-                        <li><a href="#"><strong>Mail: </strong>onlineshop.com</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><strong>Address: </strong>
-                            <div>
-                                Metro Manila<br />
-                                NCR, Philippines
-                            </div>
-                        </a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" placeholder="Enter Keyword Here ..." class="form-control">
-                </div>
-                &nbsp;
-                <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact Us
+        </a>
+        <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">0912 345 6789</a>
+          <a class="dropdown-item" href="#">onlineshop.com</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Address:</a>
+          <a class="dropdown-item" href="#">Metro Manila</a>
+          <a class="dropdown-item" href="#">NCR, Philippines</a>
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+      </li>
+    </ul>
+    <!--  -->
+  </div>
+</nav><br>

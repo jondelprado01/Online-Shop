@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/login-style.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-<link href="assets/css/alertify.min.css" rel="stylesheet"/>
-<link href="assets/css/default.min.css" rel="stylesheet"/>
-<link href="assets/css/semantic.min.css" rel="stylesheet"/>
+  <?php
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/alertify.min.js"></script>
-<title>Sample Web System</title>
+    require 'pages/parts/common/head.php';
 
+  ?>
 </head>
 <body>
 
@@ -39,7 +30,7 @@
       <div class="col-md-4">
 
         <div class="form-group">
-          <p>First Name <span class="glyphicon glyphicon-asterisk"></span></p>
+          <p>First Name <i class="fa fa-asterisk"></i></p>
           <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
         </div>
 
@@ -48,7 +39,7 @@
       <div class="col-md-4">
 
         <div class="form-group">
-          <p>Last Name <span class="glyphicon glyphicon-asterisk"></p>
+          <p>Last Name <i class="fa fa-asterisk"></i></p>
           <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
         </div>
 
@@ -70,7 +61,7 @@
         <div class="col-md-6 col-sm-6">
 
           <div class="form-group">
-            <p>Date of Birth <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Date of Birth <i class="fa fa-asterisk"></i></p>
             <input type="date" class="form-control" name="bday" value="" required>
           </div>
 
@@ -78,9 +69,9 @@
 
           <div class="col-md-6 col-sm-6 text-center">
 
-            <p>Gender <span class="glyphicon glyphicon-asterisk"></p>
-            <label class="radio-inline"><input type="radio" name="gender" value="">Male</label>
-            <label class="radio-inline"><input type="radio" name="gender" value="">Female</label>
+            <p>Gender <i class="fa fa-asterisk"></i></p>
+            <label class="radio-inline"><input type="radio" name="gender" value=""> Male</label>
+            <label class="radio-inline"><input type="radio" name="gender" value=""> Female</label>
 
           </div>
 
@@ -92,42 +83,42 @@
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="form-group">
-            <p>House/Block/Lot No. <span class="glyphicon glyphicon-asterisk"></p>
+            <p>House/Block/Lot No. <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="lot" placeholder="House/Block/Lot No." required>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="form-group">
-            <p>Street <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Street <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="street" placeholder="Street">
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="form-group">
-            <p>Barangay <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Barangay <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="barangay" placeholder="Barangay">
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="form-group">
-            <p>City <span class="glyphicon glyphicon-asterisk"></p>
+            <p>City <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="city" placeholder="City">
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="form-group">
-            <p>Zipcode <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Zipcode <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="zipcode" placeholder="Zipcode">
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="form-group">
-            <p>Country <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Country <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="country" placeholder="Country">
           </div>
         </div>
@@ -141,7 +132,7 @@
         <div class="col-md-4">
 
           <div class="form-group">
-            <p>Email Address <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Email Address <i class="fa fa-asterisk"></i></p>
             <input type="email" class="form-control" name="email" placeholder="Email Address" required>
           </div>
 
@@ -159,7 +150,7 @@
         <div class="col-md-4">
 
           <div class="form-group">
-            <p>Mobile <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Mobile <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="mobile" placeholder="Mobile" required>
           </div>
 
@@ -172,7 +163,7 @@
         <div class="col-md-6">
 
           <div class="form-group">
-            <p>Username <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Username <i class="fa fa-asterisk"></i></p>
             <input type="text" class="form-control" name="username" placeholder="Username" required>
           </div>
 
@@ -181,7 +172,7 @@
         <div class="col-md-6">
 
           <div class="form-group">
-            <p>Password <span class="glyphicon glyphicon-asterisk"></p>
+            <p>Password <i class="fa fa-asterisk"></i></p>
             <input type="password" class="form-control" name="password" placeholder="Password" required>
           </div>
 
@@ -198,11 +189,11 @@
          ?>
 
         <div class="col-md-12 text-center">
-          <label class="checkbox-inline"><input type="checkbox" value=""><i>I accept Online Shop's Terms & Conditions</i></label><br>
+          <label class="checkbox-inline"><input type="checkbox" value=""><i> I accept Online Shop's Terms & Conditions</i></label><br>
           <a href="" data-toggle="modal" data-target="#newCategory">See Terms & Conditions</a>
         </div>
 
-      </div>
+      </div><br>
 
       <div class="row">
 

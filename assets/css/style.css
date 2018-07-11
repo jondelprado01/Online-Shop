@@ -76,6 +76,11 @@ hr {
     border-width: 1px;
 }
 
+.fa-asterisk{
+  color: red;
+  font-size: 10px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family:'Open Sans', sans-serif;
 }
@@ -189,4 +194,44 @@ opacity: 1;
      color:#fff;
      background-color:#000;
      font-size:14px;
+}
+
+/* Components */
+
+.dropdown, .dropdown2 {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.dropdown-content, .dropdown-content2{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.dropdown-content a, .dropdown-content2 a {
+  color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, .dropdown-content2 a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.dropdown:hover, .dropdown2:hover{
+    background-color: #3e8e41;
 }

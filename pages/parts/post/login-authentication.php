@@ -5,24 +5,28 @@
   $user = $_POST['username'];
   $pass = $_POST['password'];
 
-  $retrieveUser = mysqli_query($conn, "SELECT customer_firstname, customer_username,
-                  customer_password FROM customer_table WHERE customer_status = 'Active'");
+  $retrieveUser = mysqli_query($conn, "SELECT *, CONCAT(customer_firstname,' ',customer_lastname)
+                  AS fullname FROM customer_table WHERE customer_status = 'Active'");
 
   while ($row = mysqli_fetch_array($retrieveUser)) {
 
     $usernameExtracted = $row['customer_username'];
     $passwordExtracted = $row['customer_password'];
     $firstname = $row['customer_firstname'];
+    $fullname = $row['fullname'];
+    $mobile = $row['customer_mobile'];
 
     if ($user == $usernameExtracted && $pass == $passwordExtracted) {
 
       $_SESSION['name'] = $firstname;
+      $_SESSION['fullname'] = $fullname;
+      $_SESSION['mobile'] = $mobile;
 
       ?>
 
       <script>
 
-        window.location.href = "index-prototype.php";
+        window.location.href = "index.php";
 
       </script>
 
