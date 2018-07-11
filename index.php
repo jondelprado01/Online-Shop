@@ -1,200 +1,234 @@
 <!DOCTYPE html>
+
+<?php
+
+  session_start();
+
+?>
+
 <html lang="en" dir="ltr">
-
   <head>
-
-    <?php require 'pages/parts/common/head.php'; ?>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sample Web System</title>
+    <!-- Bootstrap core CSS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/alertify.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap-4.0.0.min.js"></script>
+    <link href="assets/css/bootstrap-4.0.0.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/alertify.min.css" rel="stylesheet"/>
+    <link href="assets/css/default.min.css" rel="stylesheet"/>
+    <link href="assets/css/semantic.min.css" rel="stylesheet"/>
+    <!-- Fontawesome core CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- custom CSS here -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Online Shop</title>
   </head>
-
   <body>
 
-    <!-- Navigation -->
-    <?php require 'pages/parts/common/navigation.php'; ?>
+<!-- HEADER -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark my-0 py-0 rounded-bottom">
+    <!-- BRAND AND COLLAPSE BUTTON -->
+    <a class="navbar-brand text-light" href="#">Online Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--  -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- SEARCH BAR -->
+      <form class="input-group form-inline input-group-sm w-50 my-2 mx-sm-auto">
+        <input class="form-control mr-sm-0" type="search" placeholder="" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
+          </div>
+      </form>
+      <!--  -->
+      <!-- NAVIGATION -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Track Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Cart</a>
+        </li>
 
-    <div class="container">
+        <?php
 
-      <div id="myCarousel" class="carousel slide carousel-fade" data-interval-"false" data-ride="carousel">
-<!-- Indicators -->
-        <div class="col-md-12">
-            <div class="well well-lg offer-box text-center">
+        if (isset($_SESSION['name'])) {
+          $currentUser = $_SESSION['name'];
+          ?>
+          <li class="nav-item active">
+            <a href="#" class="nav-link text-light"><?php echo $currentUser ?></a>
+          </li>
 
+          <li class="nav-item active">
+            <a href="session-destroyer.php" class="nav-link text-white">Logout</a>
+          </li>
+          <?php
+        }
+        else {
+          ?>
+          <li class="nav-item active">
+            <a href="login.php" class="nav-link text-light">Login</a>
+          </li>
 
-              <p style="font-family: arial">Welcome to PC Online Shop</p>
-              <p>Stay updated for limited offers and discount</p>
+          <li class="nav-item active">
+            <a href="signup.php" class="nav-link text-white">Signup</a>
+          </li>
+          <?php
+        }
 
-               <!-- Today's Offer : &nbsp; <span class="glyphicon glyphicon-cog"></span>&nbsp;40 % off  on purchase of $ 2,000 and above till 24 dec ! -->
-
-            </div>
-
-            <div class="main box-border">
-
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="category">
-
-                    <a href="index.php">
-                      <img class="image" src="assets/img/components.jpg" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Components</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="pages/category.php" class="btn btn-warning" role="button">Check All Latest Components</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-
-                    <a href="index.php">
-
-                      <img class="image" src="assets/img/peripherals.jpg" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Peripherals</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                  <div class="middle">
-                    <a href="#" class="btn btn-warning" role="button">Check All Latest Peripherals</a></p>
-                  </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-                    <a href="index.php">
-
-                      <img class="image" src="assets/img/net.png" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Net Devices</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="#" class="btn btn-warning" role="button">Check All Latest Net Devices</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-
-                    <a href="index.php">
-
-                      <img class="image" src="assets/img/laptops.jpg" style="width:100%;">
-
-                      <div class="carousel-caption">
-                        <h3 style="color:red; font-weight:bold">Laptops</h3>
-                        <p>Click to see the list of Items</p>
-                      </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="#" class="btn btn-warning" role="button">Check All Latest Laptops</a></p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="category">
-                    <a href="index.php">
-
-                    <img class="image" src="assets/img/accessories.jpg" style="width:100%;">
-
-                    <div class="carousel-caption">
-                      <h3 style="color:red; font-weight:bold">Accessories</h3>
-                      <p>Click to see the list of Items</p>
-                    </div>
-
-                    </a>
-
-                    <div class="middle">
-                      <a href="#" class="btn btn-warning" role="button">Check All Latest Accessories</a></p>
-                    </div>
-
-                  </div>
-                </div>
+         ?>
 
 
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
 
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact Us
+          </a>
+          <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">0912 345 6789</a>
+            <a class="dropdown-item" href="#">onlineshop.com</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Address:</a>
+            <a class="dropdown-item" href="#">Metro Manila</a>
+            <a class="dropdown-item" href="#">NCR, Philippines</a>
+          </div>
+        </li>
+      </ul>
+      <!--  -->
+    </div>
+  </nav>
+<!-- HEADER END -->
 
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-              </ol>
-
-              </div>
-
-
-            </div>
+<!-- BODY -->
+  <div class="container-fluid mw-100 mh-100">
+    <!-- CATEGORIES -->
+    <div class="row justify-content-center">
+      <div class="col-md col-sm-4 col-6 py-3">
+        <p class="text-center my-0"><strong>Components</strong></p>
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/components.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
         </div>
-
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
       </div>
 
+      <div class="col-md col-sm-4 col-6 py-3 bg-light">
+        <p class="text-center my-0"><strong>Peripherals</strong></p>
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/peripherals.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
+
+      <div class="col-md col-sm-4 col-6 py-3">
+        <p class="text-center my-0"><strong>Network Hardwares</strong></p>
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/net.png">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
+
+      <div class="col-md col-sm-4 col-6 py-3 bg-light">
+        <p class="text-center my-0"><strong>Laptops</strong></p>
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/laptops.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
+
+      <div class="col-md col-sm-4 col-6 py-3">
+        <p class="text-center my-0"><strong>Accessories</strong></p>
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/accessories.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">XX Brands</p>
+        <p class="text-center text-muted my-0">XXXXX Items in Stock</p>
+      </div>
     </div>
+    <!--  -->
+
+    <!-- DISCOUNTED ITEMS -->
+    <div class="d-flex bg-info text-light pt-2 px-3 rounded">
+      <h5><strong>Discounted Items</strong><h5>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md col-sm-4 col-6 py-3">
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/accessories.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">Item Name GTX-90000 RGB XYZ fgh lfzh kdgfdgf jhkjh hkjhz</p>
+        <p class="text-center text-muted my-0"><s>30,000php</s> <strong>21,000php</strong></p>
+        <p class="text-center text-danger my-0"><strong>30% OFF</strong></p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3 bg-light">
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/accessories.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">Item Name GTX-90000 RGB XYZ fgh lfzh kdgfdgf jhkjh hkjhz</p>
+        <p class="text-center text-muted my-0"><s>30,000php</s> <strong>21,000php</strong></p>
+        <p class="text-center text-danger my-0"><strong>30% OFF</strong></p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/accessories.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">Item Name GTX-90000 RGB XYZ fgh lfzh kdgfdgf jhkjh hkjhz</p>
+        <p class="text-center text-muted my-0"><s>30,000php</s> <strong>21,000php</strong></p>
+        <p class="text-center text-danger my-0"><strong>30% OFF</strong></p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3 bg-light">
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/accessories.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">Item Name GTX-90000 RGB XYZ fgh lfzh kdgfdgf jhkjh hkjhz</p>
+        <p class="text-center text-muted my-0"><s>30,000php</s> <strong>21,000php</strong></p>
+        <p class="text-center text-danger my-0"><strong>30% OFF</strong></p>
+      </div>
+      <div class="col-md col-sm-4 col-6 py-3">
+        <div id="thumbnail" class="container">
+          <img class="image mw-100" src="assets/img/accessories.jpg">
+          <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+        </div>
+        <p class="text-center text-muted my-0">Item Name GTX-90000 RGB XYZ fgh lfzh kdgfdgf jhkjh hkjhz</p>
+        <p class="text-center text-muted my-0"><s>30,000php</s> <strong>21,000php</strong></p>
+        <p class="text-center text-danger my-0"><strong>30% OFF</strong></p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="d-flex justify-content-center align-items-center my-3">
+      <div  class="bg-warning px-3 py-2 rounded">
+        <a class="h5 text-light" href="#"><strong>View All Available Discounts</strong><a>
+
+      </div>
+    </div>
+    <hr>
 
     <!-- Footer -->
     <?php require 'pages/parts/common/footer.php'; ?>
 
-    <!-- Feature Scripts -->
-    <?php require 'pages/parts/common/feature-scripts.php'; ?>
+  </div>
+<!-- BODY END -->
 
   </body>
-
 </html>
-
-
-<script>
-
-$(function () {
-
-    $('#mi-slider').catslider();
-
-});
-
-$('.carousel[data-type="multi"] .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-
-  for (var i=0;i<1;i++) {
-    next=next.next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-
-    next.children(':first-child').clone().appendTo($(this));
-  }
-});
-</script>

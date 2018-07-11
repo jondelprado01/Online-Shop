@@ -1,81 +1,58 @@
-﻿
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-
-    ========================================================  */
-
-
-
-
-
-/*=======================================
+﻿/*=======================================
     GENERAL STYLES
 ==================================================*/
-
-body {
-          font-family:'Open Sans', sans-serif;
-    font-size:14px;
-    /* background: #ced5dd; */
+html {
+  font-size: .6rem;
 }
 
-ul.advisory .description{
-  list-style-type: square;
+@media screen and (min-width: 540px) {
+  html {
+    font-size: .75rem;
+  }
 }
 
-.checked{
-  color: orange;
+@media screen and (min-width: 720px) {
+  html {
+    font-size: .85rem;
+  }
 }
 
-.modal-dialog{
-  margin-top: 100px;
-  width: 800px;
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 1rem;
+  }
 }
 
-.thumbnail, .category{
-    position: relative;
-    width: 100%;
+/*  */
+body{
+  font-family:'Open Sans', sans-serif;
+  /* background: #ced5dd; */
 }
 
-.image {
-  opacity: 1;
-  display: block;
+#thumbnail {
+  position: relative;
   width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+#thumbnail .appear-on-hover {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  cursor: pointer;
+  font-size: 0.7em;
 }
 
-.thumbnail:hover .image {
-  opacity: 0.3;
+/* BUTTON APPEARS ON HOVER */
+a.appear-on-hover {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.thumbnail:hover .middle {
+img:hover + .appear-on-hover, .appear-on-hover:hover {
   opacity: 1;
-}
-
-.category:hover .image {
-  opacity: 0.3;
-}
-
-.category:hover .middle {
-  opacity: 1;
+  transition: opacity 0.2s;
 }
 
 .text {
@@ -166,135 +143,14 @@ opacity: 1;
 /*=======================================
   NAVBAR ADJUSTMENTS
 ==================================================*/
-.navbar-brand {
-font-size: 25px;
-padding: 15px 80px 15px 60px;
-}
-.navbar-default .navbar-brand {
-color: #000000;
-}
-.navbar-default {
-background-color: #000000;
-border-color: #000000;
-}
-.navbar {
- border-radius: 0px;
-}
-.navbar-default .navbar-nav > li > a {
-color: #FFF;
-}
-.navbar-default .navbar-nav > li > a:hover {
-color: #FFF;
-}
 
-.navbar-default .navbar-brand {
-color: #FFFFFF;
-}
-.navbar-default .navbar-brand:hover {
-color: #FFFFFF;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-color: #050505;
-background-color: #FFFFFF;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-color: #000;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-color: #000;
-}
-/*=======================================
-  BOOTSTRAP ADJUSTMENTS
-==================================================*/
-.row {
-    margin-bottom:10px;
-}
-.btn {
-    margin-bottom:5px;
-}
-/*=======================================
-  INDEX PAGE
-==================================================*/
+    http://creativecommons.org/licenses/by/3.0/
 
-.box-border {
-    border:1px solid #e1e1e1;
-}
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
 
-.product-box h3>a,.product-box h3>a:hover,.product-box h3>a:focus {
-    color:#000;
-    text-decoration:none;
-}
+    ========================================================  */
 
-.offer-box {
-background-color: #6A75F0;
-border: 1px solid #096FC0;
-color: #fff;
-font-weight: 900;
-font-size:16px;
-}
-    .offer-box a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: normal;
-    }
-    .offer-box a:hover {
-        color:#000;
-    }
-.list-group a {
-
-    font-size:14px;
-    font-weight:900;
-    color:#808080;
-}
-.list-group a:hover {
-     color:#000;
-    text-decoration:none;
-}
-.offer-colors {
-   background-color: #B05FDD;
-border: 1px solid #A228F3;
-}
-
-.download-app-box {
-    background-color: #069E98;
-border: 1px solid #0FAA8B;
-padding:30px;
-line-height:40px;
-font-size:25px;
-font-weight:900;
-color:#fff;
-}
-/*=======================================
-  SLIDER main-style.css Changes
-==================================================*/
-.mi-slider {
-margin-top: 0px;
-}
-
-/* .carousel-inner img {
-      width: 100%;
-      height: 1000px;
-  } */
-
-.offer-text
-{
-position: absolute;
-color: #FFF;
-padding: 14px 16px 12px 16px;
-margin-top: 10px;
-background-color:#18b424;
-
-}
-.offer-text2
-{
-position: absolute;
-color: #FFF;
-padding: 14px 16px 12px 16px;
-margin-top: 10px;
-background-color:#EB0429;
-
-}
 /*=======================================
   FOOTER SECTION
 ==================================================*/
