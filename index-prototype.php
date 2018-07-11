@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<?php
+
+  session_start();
+
+?>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -8,9 +15,14 @@
     <title>Sample Web System</title>
     <!-- Bootstrap core CSS -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/alertify.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap-4.0.0.min.js"></script>
     <link href="assets/css/bootstrap-4.0.0.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/alertify.min.css" rel="stylesheet"/>
+    <link href="assets/css/default.min.css" rel="stylesheet"/>
+    <link href="assets/css/semantic.min.css" rel="stylesheet"/>
     <!-- Fontawesome core CSS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--GOOGLE FONT -->
@@ -48,12 +60,37 @@
         <li class="nav-item">
           <a class="nav-link text-light" href="#">Cart</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link text-light" href="#">Login</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="#"><strong>Sign Up</strong><span class="sr-only">(current)</span></a>
-        </li>
+
+        <?php
+
+        if (isset($_SESSION['name'])) {
+          $currentUser = $_SESSION['name'];
+          ?>
+          <li class="nav-item active">
+            <a href="#" class="nav-link text-light"><?php echo $currentUser ?></a>
+          </li>
+
+          <li class="nav-item active">
+            <a href="session-destroyer.php" class="nav-link text-white">Logout</a>
+          </li>
+          <?php
+        }
+        else {
+          ?>
+          <li class="nav-item active">
+            <a href="login.php" class="nav-link text-light">Login</a>
+          </li>
+
+          <li class="nav-item active">
+            <a href="signup.php" class="nav-link text-white">Signup</a>
+          </li>
+          <?php
+        }
+
+         ?>
+
+
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Contact Us

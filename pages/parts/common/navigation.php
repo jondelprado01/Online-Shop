@@ -18,8 +18,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="order-tracking.html">Track Order</a></li>
                 <li><a href="#">Cart</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="signup.php">Signup</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">24x7 Support <b class="caret"></b></a>
