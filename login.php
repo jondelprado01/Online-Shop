@@ -22,7 +22,80 @@
 
 ?>
 
-<div class="center">
+
+<div class="row pb-3">
+  <div class="col-3">
+    <!--  -->
+  </div>
+  <div class="col container bg-secondary p-3 rounded">
+    <div class="container bg-white p-3 rounded">
+      <div class="row d-flex justify-content-center">
+        <h5 class="text-center d-inline-flex bg-info  px-3 py-2 mx-3 mt-auto pb-0 text-light rounded">Please login your account to start shopping online!</h3>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <img src="assets/img/login.gif" alt="Avatar" class="d-inline-flex avatar">
+      </div>
+      <div class="row pt-3 mx-0">
+        <!-- ACCOUNT LOGIN -->
+        <div class="col-md col-12">
+
+          <div class="row mx-auto ">
+            <p class="text-center">Login using your Onlineshop Account.</p>
+          </div>
+
+          <div class="row p-1">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Username" name="username" required>
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">Clear</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1">
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="Password" name="password" required>
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">Clear</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1">
+            <div class="col px-0 mr-1">
+              <button type="submit" class="btn btn-success btn-block" name="btn-login">Login</button>
+            </div>
+            <div class="col px-0 ml-1">
+              <button type="button" class="btn btn-primary btn-block"> <a href="signup.php" style="color: white;">Signup</a> </button>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- SOCIAL MEDIA ACCOUNT LOGIN -->
+        <div class="col-md col-12">
+          <div class="row mx-auto">
+            <p class="text-center">Or using your social media accounts:</p>
+          </div>
+          <div class="row p-1">
+            <button type="button" name="facebook" class="btn btn-primary btn-block"><span class="fa fa-facebook-square"></span> Facebook</button>
+          </div>
+
+          <div class="row p-1">
+            <button type="button" name="facebook" class="btn btn-danger btn-block"><span class="fa fa-google-plus-square"></span> Google+</button>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+
+      </div>
+    </div>
+    <div class="col-3">
+      <!--  -->
+    </div>
+</div>
+
+<!-- <div class="center">
 
   <h3 class="text-center">Please login your account to start shopping online!</h3>
 
@@ -69,15 +142,7 @@
 
       <div class="col-md-6 col-sm-6 col-xs-12 accounts">
 
-        <p class="text-center" style="font-style: italic; color: blue;">Or Login using your social media accounts:</p>
 
-        <div class="row">
-          <button type="button" name="facebook" class="btn btn-primary col-md-12 col-sm-12 col-xs-12"><span class="fa fa-facebook-square"></span> Facebook</button>
-        </div>
-
-        <div class="row">
-          <button type="button" name="facebook" class="btn btn-danger col-md-12 col-sm-12 col-xs-12"><span class="fa fa-google-plus-square"></span> Google+</button>
-        </div>
 
       </div>
 
@@ -85,7 +150,7 @@
 
   </form>
 
-</div><br>
+</div><br> -->
 
 <?php
 
