@@ -33,7 +33,7 @@
         <h5 class="text-center d-inline-flex bg-info  px-3 py-2 mx-3 mt-auto pb-0 text-light rounded">Please login your account to start shopping online!</h3>
       </div>
       <div class="row d-flex justify-content-center">
-        <img src="assets/img/login.gif" alt="Avatar" class="d-inline-flex avatar">
+        <img src="assets/img/login.gif" alt="Avatar" class="d-inline-flex avatar mh-100 mw-100">
       </div>
       <div class="row pt-3 mx-0">
         <!-- ACCOUNT LOGIN -->
