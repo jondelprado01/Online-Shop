@@ -21,8 +21,8 @@
   </div>
   <div class="col container bg-secondary rounded p-3">
     <div class="container bg-light p-3">
-      <p class="text-center h3">Create an <b>Online Shop</b> account to start shopping online!</p>
       <br>
+      <p class="text-center h3">Create an <b>Online Shop</b> account to start shopping online!</p>
       <br>
       <p class="text-left text-muted px-3"> Personal Information</p>
       <div class="row px-3">
