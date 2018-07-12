@@ -45,6 +45,7 @@
           <div class="input-group-append">
             <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
           </div>
+<<<<<<< HEAD
       </form>
       <!--  -->
       <!-- NAVIGATION -->
@@ -61,6 +62,40 @@
             <a class="dropdown-item" href="#">Address:</a>
             <a class="dropdown-item" href="#">Metro Manila</a>
             <a class="dropdown-item" href="#">NCR, Philippines</a>
+=======
+
+          <div class="row p-1">
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="Password" name="password" required>
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">Clear</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1">
+            <div class="col px-0 mr-1">
+              <button type="submit" class="btn btn-success btn-block" name="btn-login">Login</button>
+            </div>
+            <div class="col px-0 ml-1">
+              <a class="btn btn-primary btn-block" href="signup.php">Signup</a> </button>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- SOCIAL MEDIA ACCOUNT LOGIN -->
+        <div class="col-md col-12">
+          <div class="row mx-auto">
+            <p class="text-center">Or using your social media accounts:</p>
+          </div>
+          <div class="row p-1">
+            <button type="button" name="facebook" class="btn btn-primary btn-block"><span class="fa fa-facebook-square"></span> Facebook</button>
+          </div>
+
+          <div class="row p-1">
+            <button type="button" name="facebook" class="btn btn-danger btn-block"><span class="fa fa-google-plus-square"></span> Google+</button>
+>>>>>>> 13f104208573b01298c23bbb4b1dea4450a16292
           </div>
         </li>
         
