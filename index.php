@@ -8,9 +8,27 @@
 
 <html lang="en" dir="ltr">
   <head>
-    <!-- HEADER -->
-    <?php require 'pages/parts/common/head.php'; ?>
-    <!--  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="assets/css/bootstrap-4.0.0.min.css" rel="stylesheet">
+    <link href="assets/css/login-style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/alertify.min.css" rel="stylesheet"/>
+    <link href="assets/css/default.min.css" rel="stylesheet"/>
+    <link href="assets/css/semantic.min.css" rel="stylesheet"/>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/bootstrap-4.0.0.min.js"></script>
+    <script src="assets/js/alertify.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+
+    <title>Online Shop</title>
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -25,7 +43,7 @@
           <p class="text-center my-0"><strong>Components</strong></p>
           <div id="thumbnail" class="container">
             <img class="image mw-100" src="assets/img/components.jpg">
-            <a class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+            <a href="pages/components.php" class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
           </div>
           <p class="text-center text-muted my-0">XX Brands</p>
           <p class="text-center text-muted my-0">XXXXX Items in Stock</p>

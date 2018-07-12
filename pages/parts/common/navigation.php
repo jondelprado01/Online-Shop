@@ -17,12 +17,36 @@
     <!-- NAVIGATION -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link text-light" href="#">Track Order</a>
+        <a href="order-tracking.php" class="nav-link text-light">Track Order</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" href="#">Cart</a>
       </li>
 
+      <?php
+
+      if (isset($_SESSION['name'])) {
+        $currentUser = $_SESSION['name'];
+        $currentUserFullname = $_SESSION['fullname'];
+        $currentUserMobile = $_SESSION['mobile'];
+
+        ?>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <?php echo $currentUser ?>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><?php echo $currentUserFullname ?></a>
+            <a class="dropdown-item" href="#"><?php echo $currentUserMobile ?></a>
+            <div class="dropdown-divider"></div>
+            <a href="session-destroyer.php" class="dropdown-item">Logout</a>
+          </div>
+        </li>
+
+        <?php
+      }
+      else {
+        ?>
         <li class="nav-item active">
           <a href="login.php" class="nav-link text-light">Login</a>
         </li>
@@ -31,20 +55,23 @@
           <a href="signup.php" class="nav-link text-white">Signup</a>
         </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact Us
+          </a>
+          <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">0912 345 6789</a>
+            <a class="dropdown-item" href="#">onlineshop.com</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Address:</a>
+            <a class="dropdown-item" href="#">Metro Manila</a>
+            <a class="dropdown-item" href="#">NCR, Philippines</a>
+          </div>
+        </li>
+        <?php
+      }
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contact Us
-        </a>
-        <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">0912 345 6789</a>
-          <a class="dropdown-item" href="#">onlineshop.com</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Address:</a>
-          <a class="dropdown-item" href="#">Metro Manila</a>
-          <a class="dropdown-item" href="#">NCR, Philippines</a>
-        </div>
-      </li>
+       ?>
     </ul>
     <!--  -->
   </div>

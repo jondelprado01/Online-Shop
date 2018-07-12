@@ -1,15 +1,14 @@
 <div class="modal fade" id="newCategory"  role="dialog" style="width: 100%" aria-hidden="true">
 <div class="modal-dialog">
-  <div class="modal-content" style="margin-top: 5em; margin-left: 1em">
+  <div class="modal-content">
     <div class="modal-header">
-      <button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       <h4 class="modal-title">
         Terms & Conditions
       </h4>
     </div>
     <div class="modal-body">
 
-      Don't wanna hear it's over
+Don't wanna hear it's over
 What a rude awakening
 Angel of death has come and ripped you from my life
 I can't stand the devastation

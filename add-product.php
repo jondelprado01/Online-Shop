@@ -15,7 +15,7 @@
         <option value="mobo">Mobo</option>
       </select>
       <input type="text" name="price" placeholder="Product Price">
-      <input type="file" name="fileToUpload">
+      <input type="file" name="fileToUpload" multiple>
       <input type="submit" name="btn-submit" value="Save">
 
     </form>
