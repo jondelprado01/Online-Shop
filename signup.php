@@ -34,12 +34,12 @@
     <!--  -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- SEARCH BAR -->
-      <form class="input-group form-inline input-group-sm w-50 my-2 mx-sm-auto">
+      <!-- <form class="input-group form-inline input-group-sm w-50 my-2 mx-sm-auto">
         <input class="form-control mr-sm-0" type="search" placeholder="" aria-label="Search">
           <div class="input-group-append">
             <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
           </div>
-      </form>
+      </form> -->
       <!--  -->
       <!-- NAVIGATION -->
       <ul class="navbar-nav ml-auto">
