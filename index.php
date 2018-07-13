@@ -121,7 +121,7 @@
           <p class="text-center my-0"><strong>Components</strong></p>
           <div id="thumbnail" class="container">
             <img class="image mw-100" src="assets/img/components.jpg">
-            <a href="pages/components.php" class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
+            <a href="pages/components.php?all-items" class="btn btn-warning p-1 appear-on-hover" type="button">Display Contents</a>
           </div>
           <p class="text-center text-muted my-0">XX Brands</p>
           <p class="text-center text-muted my-0">XXXXX Items in Stock</p>

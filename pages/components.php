@@ -42,7 +42,48 @@
               </a>
               <ul class="list-group">
 
-                <li class="list-group-item dropdown">
+                <?php
+
+                  require '../connection.php';
+
+                  $retrieveCategory = mysqli_query($conn, "SELECT * FROM product_category_table
+                                      WHERE product_category_status = 'Active' ORDER BY product_category_id ASC");
+
+                  while ($row = mysqli_fetch_array($retrieveCategory)) {
+                    $category = $row['product_category'];
+                    $id = $row['product_category_id'];
+
+                ?>
+
+                    <li class="list-group-item dropdown">
+                      <a style="color: black;" href="#"><?php echo $category ?></a>
+                      <div class="dropdown-content">
+                        <?php
+
+                          $retrieveClassification = mysqli_query($conn, "SELECT * FROM product_classification_table
+                                                    WHERE product_category_id = '$id' AND product_classification_status = 'Active'
+                                                    ORDER BY product_classification ASC");
+
+                          while ($row2 = mysqli_fetch_array($retrieveClassification)) {
+                            $classification = $row2['product_classification'];
+
+                            ?>
+
+                            <a href="#"><?php echo $classification ?></a>
+
+                            <?php
+                          }
+
+                         ?>
+                      </div>
+                    </li>
+
+                <?php
+                  }
+
+                 ?>
+
+                <!-- <li class="list-group-item dropdown">
 
                     <a style="color: black;" href="#">Motherboard</a>
                     <div class="dropdown-content">
@@ -129,7 +170,7 @@
                         <a href="#">Cube</a>
                       </div>
 
-                  </li>
+                  </li> -->
 
               </ul>
           </div>
