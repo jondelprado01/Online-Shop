@@ -113,7 +113,7 @@
                   <button type="submit" class="btn btn-success btn-block" name="btn-login">Login</button>
                 </div>
                 <div class="col px-0 ml-1">
-                  <button type="button" class="btn btn-primary btn-block"> <a href="signup.php" style="color: white;">Signup</a> </button>
+                  <a type="button" class="btn btn-primary btn-block text-white" href="signup.php">Signup</a>
                 </div>
               </div>
             </div>
