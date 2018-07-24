@@ -110,11 +110,81 @@
         <!--  -->
       </div>
     </nav><br>
-
-    <!--  -->
+    <!-- NAVIGATION END -->
 
     <!-- BODY -->
     <div class="container-fluid mw-100 mh-100">
+      <!-- BANNER -->
+      <div class="row justify-content-center align-items-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-8 p-0 m-0">
+                  <img class="d-block w-100" src="assets/img/peripherals.jpg" alt="Second slide">
+                </div>
+                <div class="col-3 bg-dark text-light d-block w-100 py-2">
+                  <blockquote class="blockquote text-left d-block">
+                    <p class="mb-0 pr-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+                <div class="col-1 bg-dark d-block">
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-8 p-0 m-0">
+                  <img class="d-block w-100" src="assets/img/components.jpg" alt="Second slide">
+                </div>
+                <div class="col-3 bg-dark text-light d-block w-100 py-2">
+                  <blockquote class="blockquote text-left d-block">
+                    <p class="mb-0 pr-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+                <div class="col-1 bg-dark d-block">
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-8 p-0 m-0">
+                  <img class="d-block w-100" src="assets/img/net.png" alt="Second slide">
+                </div>
+                <div class="col-3 bg-dark text-light d-block w-100 py-2">
+                  <blockquote class="blockquote text-left d-block">
+                    <p class="mb-0 pr-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+                <div class="col-1 bg-dark d-block">
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- BANNER END -->
+
       <!-- CATEGORIES -->
       <div class="row justify-content-center">
         <div class="col-md col-sm-4 col-6 py-3">
