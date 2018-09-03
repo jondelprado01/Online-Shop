@@ -1,0 +1,102 @@
+body{
+  background-color: black;
+}
+
+/* .category-nav .dropdown-menu{
+  width: 170px;
+  text-align: center;
+} */
+
+.category-menu{
+  /* min-height: 50px; */
+  display: none;
+  z-index: 1;
+  /* background-color: grey; */
+  /* margin-top: 50px; */
+  /* text-align: center; */
+  /* padding-top: 50px; */
+}
+
+.category-menu ul li{
+  text-align: center;
+}
+
+.main-container{
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.news-box{
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 10px;
+}
+
+.thumbnail{
+  position: relative;
+}
+
+.product-img{
+  height: 150px;
+  width: 150px;
+}
+
+.thumbnail-menu{
+  visibility: hidden;
+  z-index: 10;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+
+}
+
+.sale-logo{
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.caption{
+  background-color: #f3f3f3;
+}
+
+.caption h4{
+  color: #ff0000;
+}
+
+
+.sale-img{
+  animation: shrink 0.8s infinite alternate;
+}
+
+
+@keyframes shrink {
+  0%{
+    width: 70px;
+    height: 70px;
+  }
+
+  100%{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+.footer-box{
+  background-color: #f3f3f3;
+  margin-top: 50px;
+}
+
+.branches-box, .social-box{
+  padding-top: 20px;
+}
+
+.end-box{
+  background-color: black;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
